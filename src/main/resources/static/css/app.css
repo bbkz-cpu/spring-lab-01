@@ -1,0 +1,58 @@
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    background: #f4f6f3;
+    color: #20332b;
+    font: 16px/1.6 Arial, sans-serif;
+}
+main, .container {
+    max-width: 1050px;
+    margin: 48px auto;
+    padding: 40px;
+    background: white;
+    border: 1px solid #dae2db;
+}
+h1 { font-size: 40px; line-height: 1.2; }
+h2 { margin-top: 36px; }
+a { color: #28563c; }
+table { border-collapse: collapse; width: 100%; margin-top: 24px; }
+th, td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #dce4dc;
+    text-align: left;
+}
+th { background: #eaf0e9; }
+.flash { background: #e4f4e6; padding: 14px 18px; }
+input {
+    padding: 10px;
+    border: 1px solid #acbdb1;
+    border-radius: 4px;
+    font: inherit;
+    max-width: 100%;
+}
+button, .button {
+    display: inline-block;
+    background: #28563c;
+    color: white;
+    padding: 11px 22px;
+    border: 0;
+    border-radius: 4px;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+.filter, .create, .filter-form {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.create label { flex: 1; }
+.create input { display: block; width: 100%; }
+footer { margin-top: 35px; display: flex; gap: 24px; }
+.table-wrapper { overflow-x: auto; }
+@media (max-width: 700px) {@media (max-width: 700px) {
+    main, .container { margin: 12px; padding: 20px; }
+    h1 { font-size: 30px; }
+    th, td { padding: 8px; }
+}'@ | Set-Content -Encoding utf8 src/main/resources/static/css/app.css
